@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Adem Yahya</title>
+    <meta name="description" content="Portfolio of Adem Yahya, embedded systems and IoT engineer: embedded vision for ADAS, FPGA acceleration, STM32 and Linux-based systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a class="brand" href="index.html">Adem Yahya</a>
+            <ul class="nav-links"><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </nav>
+    </header>
+    <main id="main">
+<section class="page-head"><div class="container"><h1>Projects</h1><h3 class="subhead">Internship projects</h3><p>From ADAS vision pipelines to secure RF systems and custom Linux images.</p></div></section><section id="projects" class="section">
+            <div class="container">
+
+                <article class="featured reveal">
+                    <figure class="media"><img src="images/adas.png" alt="Embedded vision ADAS demo" loading="lazy" onerror="this.remove()"></figure>
+                    <div class="featured-head">
+                        <h3>Embedded Vision for ADAS Systems</h3>
+                        <p class="meta">Final Year Project, Capgemini Engineering, Feb. to Jun. 2026</p>
+                    </div>
+                    <div class="featured-body">
+                        <p>End-to-end object detection pipeline for driver assistance, taken from model training to hardware deployment.</p>
+                        <ul>
+                            <li>Trained and optimized YOLOv8 detection models using knowledge distillation.</li>
+                            <li>Accelerated inference on an FPGA (ZedBoard) with VHDL and Vitis HLS.</li>
+                            <li>Reduced precision to FP16 and deployed on Jetson Nano.</li>
+                            <li>Built a visualization and control interface in Python (PyQt / Qt).</li>
+                        </ul>
+                        <p class="tags">PyTorch, NumPy, OpenCV, Ultralytics YOLO, FPGA, VHDL, Jetson Nano</p>
+                    </div>
+                </article>
+
+                <article class="featured reveal">
+                    <figure class="media"><img src="images/key.jpeg" alt="Smart car key prototype" loading="lazy" onerror="this.remove()"></figure>
+                    <div class="featured-head">
+                        <h3>Smart Car Key Security</h3>
+                        <p class="meta">Internship, Capgemini Engineering, Jun. to Aug. 2025</p>
+                    </div>
+                    <div class="featured-body">
+                        <p>A car key system designed to resist RF replay, relay and injection attacks.</p>
+                        <ul>
+                            <li>Implemented on Raspberry Pi 4, STM32F4 and Arduino with 433 MHz RF modules.</li>
+                            <li>Integrated AES, RSA and DES security algorithms.</li>
+                            <li>Developed a companion Flutter mobile application.</li>
+                        </ul>
+                        <p class="tags">STM32F4, Raspberry Pi 4, Arduino, RF 433 MHz, Flutter</p>
+                    </div>
+                </article>
+
+
+                
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <figure class="media"><img src="images/streamlink.jpeg" alt="Robot control desktop application" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>Robot Control Desktop Application</h4>
+                        <p class="meta">Introductory Internship, Streamlink, Jun. 2024</p>
+                        <p>Desktop application in Python (PyQt) controlling a robot through an STM32 over UART.</p>
+                        <p class="tags">Python, PyQt, STM32, UART</p>
+                    </article>
+                    <article class="project reveal">
+                        <figure class="media"><img src="images/orange-nbiot.jpg.png" alt="NB-IoT network architecture" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>NB-IoT Network Architecture</h4>
+                        <p class="meta">Bachelor's Final Year Internship, Orange Tunisia, Feb. to May 2023</p>
+                        <p>Design and modernization of an NB-IoT network architecture, validated with Atoll.</p>
+                        <p class="tags">NB-IoT, Atoll, Network design</p>
+                    </article>
+                </div>
+
+                <h3 class="subhead">Academic projects</h3>
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <figure class="media"><img src="images/can.jpeg" alt="CAN/Ethernet gateway setup" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>CAN/Ethernet Gateway for Connected Car</h4>
+                        <p>Remote climate-control system bridging a CAN bus and Ethernet through an MQTT broker, with a Flutter app.</p>
+                        <p class="tags">STM32F7, Raspberry Pi 4, CAN, MQTT, Flutter</p>
+                    </article>
+                    <article class="project reveal">
+                        <figure class="media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkXxITkeaIS6Y2e6CKDqpiVX4ktlHl8a74q7KfXPpCA&s=10" alt="Facial recognition on Raspberry Pi" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>Facial Recognition Access Control</h4>
+                        <p>Custom Yocto Linux image for Raspberry Pi 4 running real-time face detection and recognition.</p>
+                        <p class="tags">Yocto, Python, TensorFlow, OpenCV</p>
+                    </article>
+                    <article class="project reveal">
+                        <figure class="media"><img src="images/cap.png" alt="Driver drowsiness detection" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>Driver Drowsiness Detection</h4>
+                        <p>Driver alertness monitoring on embedded hardware, with mobile supervision.</p>
+                        <p class="tags">Python, OpenCV, Raspberry Pi, Flutter</p>
+                    </article>
+                    <article class="project reveal">
+                        <figure class="media"><img src="images/risc.png" alt="16-bit RISC processor design" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>16-bit RISC Processor</h4>
+                        <p>Design and implementation of a processor, including its datapath and control unit.</p>
+                        <p class="tags">VHDL, Datapath, Control unit</p>
+                    </article>
+                    <article class="project reveal">
+                        <figure class="media"><img src="images/robot.png" alt="Autonomous mobile robot" loading="lazy" onerror="this.remove()"></figure>
+                        <h4>Autonomous Mobile Robot</h4>
+                        <p>Obstacle detection and avoidance with SLAM mapping, A* path planning and ROS2/Gazebo simulation, deployed on Jetson Nano.</p>
+                        <p class="tags">ROS2, Gazebo, SLAM, A*, Jetson Nano</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container"><p>&copy; 2026 Adem Yahya. All rights reserved.</p></div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

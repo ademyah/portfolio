@@ -3,108 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adem Yahya Portfolio</title>
+    <title>Embedded Systems and IoT Engineer | Adem Yahya</title>
+    <meta name="description" content="Portfolio of Adem Yahya, embedded systems and IoT engineer: embedded vision for ADAS, FPGA acceleration, STM32 and Linux-based systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">Adem Yahya</h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main">
+            <a class="brand" href="index.html">Adem Yahya</a>
+            <ul class="nav-links"><li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
         </nav>
     </header>
-
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-				<img src="images/adem.jpg" alt="Adem Yahya" class="profile-photo">
-                <h2>Bienvenue, je suis Adem Yahya</h2>
-                <p>Développeur IoT | Ingénieur en systèmes embarqués</p>
-                <a href="#projects" class="btn">Découvrir mes projets</a>
+    <main id="main">
+<section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Hello, I am</p>
+                    <h1>Adem Yahya</h1>
+                    <p class="role">Embedded Systems and IoT Engineer</p>
+                    <p class="lead">I build embedded systems that see, decide and communicate. I work on <span class="typed" id="typed" data-words="embedded vision pipelines|FPGA accelerators|STM32 firmware|secure RF links|custom Linux images">embedded vision pipelines</span><span class="caret" aria-hidden="true"></span></p>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="cv/CV_Adem_Yahya_EN.pdf" download>Download CV</a>
+                        <a class="btn btn-ghost" href="projects.html">View projects</a>
+                    </div>
+                </div>
+                <figure class="hero-photo">
+                    <img src="images/ademy.png" alt="Portrait of Adem Yahya" width="420" height="500">
+                </figure>
             </div>
-        </div>
-    </section>
+            <ul class="stats container">
+                <li><strong data-count="9">9</strong><span>Projects</span></li>
+                <li><strong data-count="4">4</strong><span>Internships and final year project</span></li>
+                <li><strong data-count="14">5</strong><span>Certifications</span></li>
+                <li><strong data-count="6">6</strong><span>Years of engineering studies</span></li>
+            </ul>
+        </section>
 
-    <!-- Projects Section -->
-	<section id="projects" class="projects">
-		<div class="container">
-			<h2 data-aos="fade-right">Mes Projets</h2>
-			<div class="project-grid">
-				<!-- Projet 1 -->
-				<div class="project-card" data-aos="zoom-in">
-					<img src="images/pp1.jpg" alt="Projet IoT">
-					<h3>Système IoT</h3>
-					<p>Suivi de flotte en temps réel avec Raspberry Pi et STM32.</p>
-					<a href="#" class="btn">Détails</a>
-				</div>
-				<!-- Projet 2 -->
-				<div class="project-card" data-aos="zoom-in">
-					<img src="images/pp2.jpg" alt="Application Mobile">
-					<h3>Application Mobile</h3>
-					<p>Gestion d'entraînement à domicile avec Python et Qt.</p>
-					<a href="#" class="btn">Détails</a>
-				</div>
-				<!-- Projet 3 -->
-				<div class="project-card" data-aos="zoom-in">
-					<img src="images/pp3.jpg" alt="Robot Control">
-					<h3>Robot Control</h3>
-					<p>Contrôle d’un bras robotisé via UART et STM32.</p>
-					<a href="#" class="btn">Détails</a>
-				</div>
-			</div>
-		</div>
-	</section>
+        <section class="section alt">
+            <div class="container">
+                <div class="section-top reveal"><h2>Featured work</h2><a class="more" href="projects.html">All projects &rarr;</a></div>
+                <div class="cards cards-3">
+                    <a class="card work reveal" href="projects.html"><figure class="media"><img src="images/adas.png" alt="Embedded vision ADAS demo" loading="lazy" onerror="this.remove()"></figure><h3>Embedded Vision for ADAS</h3><p>YOLOv8 distillation, FPGA acceleration and Jetson Nano deployment.</p><p class="tags">FPGA, YOLOv8, Jetson Nano</p></a>
+                    <a class="card work reveal" href="projects.html"><figure class="media"><img src="images/key.jpeg" alt="Smart car key prototype" loading="lazy" onerror="this.remove()"></figure><h3>Smart Car Key Security</h3><p>A car key designed to resist RF replay, relay and injection attacks.</p><p class="tags">STM32F4, RF 433 MHz, AES</p></a>
+                    <a class="card work reveal" href="projects.html"><figure class="media"><img src="rob.jpg" alt="Autonomous mobile robot in Gazebo" loading="lazy" onerror="this.remove()"></figure><h3>Autonomous Mobile Robot</h3><p>SLAM mapping, A* path planning and ROS2/Gazebo simulation.</p><p class="tags">ROS2, SLAM, Jetson Nano</p></a>
+                </div>
+            </div>
+        </section>
 
+        <section class="section">
+            <div class="container">
+                <h2 class="reveal">Core technologies</h2>
+                <div class="marquee reveal" aria-label="Core technologies"><div class="track">
+                    <span>STM32</span><span>FreeRTOS</span><span>FPGA</span><span>VHDL</span><span>Vitis HLS</span><span>Jetson Nano</span><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span><span>Yocto</span><span>ROS2</span><span>Docker</span><span>MQTT</span><span>CAN</span><span>Flutter</span>
+                    <span aria-hidden="true">STM32</span><span aria-hidden="true">FreeRTOS</span><span aria-hidden="true">FPGA</span><span aria-hidden="true">VHDL</span><span aria-hidden="true">Vitis HLS</span><span aria-hidden="true">Jetson Nano</span><span aria-hidden="true">YOLOv8</span><span aria-hidden="true">PyTorch</span><span aria-hidden="true">OpenCV</span><span aria-hidden="true">Yocto</span><span aria-hidden="true">ROS2</span><span aria-hidden="true">Docker</span><span aria-hidden="true">MQTT</span><span aria-hidden="true">CAN</span><span aria-hidden="true">Flutter</span>
+                </div></div>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 data-aos="fade-left">À propos</h2>
-            <p data-aos="fade-up">
-                Passionné par l'IoT, les systèmes embarqués et le développement mobile. 
-                Je travaille actuellement sur des projets combinant Python, STM32, et Raspberry Pi.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 data-aos="fade-right">Contactez-moi</h2>
-            <form data-aos="fade-up" action="https://formspree.io/f/myemail" method="POST">
-                <input type="text" name="name" placeholder="Votre nom" required>
-                <input type="email" name="email" placeholder="Votre email" required>
-                <textarea name="message" placeholder="Votre message" required></textarea>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Adem Yahya. Tous droits réservés.</p>
-        <div class="socials">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
+        <section class="cta-band">
+            <div class="container reveal">
+                <h2>Open to embedded, IoT and edge AI opportunities</h2>
+                <p class="actions"><a class="btn btn-light" href="contact.html">Get in touch</a><a class="btn btn-outline-light" href="experience.html">See experience</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container"><p>&copy; 2026 Adem Yahya. All rights reserved.</p></div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
